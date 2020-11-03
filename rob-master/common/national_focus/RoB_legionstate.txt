@@ -68,7 +68,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas  = {
+		add_ideas  ={
 		LES_femoidssubmit
 		}
 		}
@@ -88,6 +88,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_stability = 0.05
 		add_ideas  ={
 		LES_young_guardiansofyouth
 		}
@@ -114,6 +115,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_stability = 0.05
 		add_ideas  ={
 		LES_femoidsliberated
 		}
@@ -133,42 +135,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated
-				add_idea = LES_femoidsliberated_1
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_young_guardiansofyouth
-			add_idea = LES_young_guardiansofyouth_A_1
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit
-			add_idea = LES_femoidssubmit_A_1
-			}
-		}
-	}
 	}
 
 	#Focus for Removing the shackels_2
@@ -183,74 +149,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_1a
-				add_idea = LES_femoidsliberated_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_1
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidsliberated_1
-			add_idea = LES_femoidsliberated_1a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_A_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_A_1a
-				add_idea = LES_young_guardiansofyouth_A_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_A_1
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_young_guardiansofyouth_A_1
-			add_idea = LES_young_guardiansofyouth_A_1a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_A_1a
-				add_idea = LES_femoidssubmit_A_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_1
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_A_1
-			add_idea = LES_femoidssubmit_A_1a
-			}
-		}
-	}
 	}
 
 	#Focus for Removing the shackels_3
@@ -265,74 +163,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_1a
-				add_idea = LES_femoidsliberated_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_1
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidsliberated_1
-			add_idea = LES_femoidsliberated_1a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_A_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_A_1a
-				add_idea = LES_young_guardiansofyouth_A_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_A_1
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_young_guardiansofyouth_A_1
-			add_idea = LES_young_guardiansofyouth_A_1a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_A_1a
-				add_idea = LES_femoidssubmit_A_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_1
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_A_1
-			add_idea = LES_femoidssubmit_A_1a
-			}
-		}
-	}
 	}
 
 	#Focus for Enforce Motherhood
@@ -348,42 +178,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-				completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit
-				add_idea = LES_femoidssubmit_C_1
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth
-				add_idea = LES_young_guardiansofyouth_C_1
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated
-				add_idea = LES_femoidsliberated_C_1
-				}
-		}
-	}
-
 	}
 
 	#Focus for Enforce Motherhood_2
@@ -398,74 +192,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-				completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_1a
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_C_1a
-			add_idea = LES_femoidssubmit_C_1b
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_C_1
-				add_idea = LES_femoidssubmit_C_1a
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_1a
-				add_idea = LES_young_guardiansofyouth_C_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_1
-				add_idea = LES_young_guardiansofyouth_C_1a
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_1a
-				add_idea = LES_femoidsliberated_C_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_1
-				add_idea = LES_femoidsliberated_C_1a
-				}
-		}
-	}}
+	}
 
 	#Focus for Enforce Motherhood_3
 	focus = {
@@ -479,77 +206,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_1a
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_C_1a
-			add_idea = LES_femoidssubmit_C_1b
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_C_1
-				add_idea = LES_femoidssubmit_C_1a
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_1a
-				add_idea = LES_young_guardiansofyouth_C_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_1
-				add_idea = LES_young_guardiansofyouth_C_1a
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_1a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_1a
-				add_idea = LES_femoidsliberated_C_1b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_1
-				add_idea = LES_femoidsliberated_C_1a
-				}
-		}
-	}
 	}
 
-	#Focus for ZZZZ(kitchen)
+	#Focus for ZZZZ
 	focus = {
 		id = LES_ZZZZ
 		icon = GFX_goal_unknown
@@ -562,74 +221,6 @@ focus_tree = {
 		prerequisite = { focus = LES_removingtheshackels_2 focus = LES_removingtheshackels_3 }
 		ai_will_do = {
 			factor = 1
-		}
-				completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_C_1b
-				add_idea = LES_femoidssubmit_C_2
-				}
-			}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_1b
-				add_idea = LES_young_guardiansofyouth_C_2
-				}
-			}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_A_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_A_1b
-				add_idea = LES_young_guardiansofyouth_AB
-				}
-			}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_1b
-				add_idea = LES_femoidsliberated_C_2
-				}
-			}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_1b
-				add_idea = LES_femoidsliberated_A2
-				}
-			}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_A_1b
-				add_idea = LES_femoidssubmit_A_2
-				}
-			}
 		}
 	}
 
@@ -645,140 +236,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-				completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_2a
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_young_guardiansofyouth_C_2a
-			add_idea = LES_young_guardiansofyouth_C_2b
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_2
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_2
-				add_idea = LES_young_guardiansofyouth_C_2a
-				}
-		}	
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_2a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_C_2a
-				add_idea = LES_femoidssubmit_C_2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_C_2
-			add_idea = LES_femoidssubmit_C_2a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_ABa
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_ABa
-				add_idea = LES_young_guardiansofyouth_ABb
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_AB
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_young_guardiansofyouth_AB
-			add_idea = LES_young_guardiansofyouth_ABa
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_2a1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_2a1
-				add_idea = LES_femoidsliberated_C_2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidsliberated_C_2
-			add_idea = LES_femoidsliberated_C_2a1
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_A2a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_A2a
-				add_idea = LES_femoidsliberated_A2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_A2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidsliberated_A2
-			add_idea = LES_femoidsliberated_A2a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_2a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_A_2a
-				add_idea = LES_femoidssubmit_A_2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_A_2
-			add_idea = LES_femoidssubmit_A_2a
-			}
-		}
-	}
 	}
 
 	#Focus for ZZZZ_3
@@ -793,141 +250,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-			completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_2a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_C_2a
-				add_idea = LES_femoidssubmit_C_2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_C_2
-			add_idea = LES_femoidssubmit_C_2a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_2a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_2a
-				add_idea = LES_young_guardiansofyouth_C_2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_young_guardiansofyouth_C_2
-			add_idea = LES_young_guardiansofyouth_C_2a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_ABa
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_ABa
-				add_idea = LES_young_guardiansofyouth_ABb
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_AB
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_young_guardiansofyouth_AB
-			add_idea = LES_young_guardiansofyouth_ABa
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_2a1
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_2a1
-				add_idea = LES_femoidsliberated_C_2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidsliberated_C_2
-			add_idea = LES_femoidsliberated_C_2a1
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_A2a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_A2a
-				add_idea = LES_femoidsliberated_A2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_A2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidsliberated_A2
-			add_idea = LES_femoidsliberated_A2a
-			}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_2a
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_A_2a
-				add_idea = LES_femoidssubmit_A_2b
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_2
-						}
-					}
-			swap_ideas = {
-			remove_idea = LES_femoidssubmit_A_2
-			add_idea = LES_femoidssubmit_A_2a
-			}
-		}
-
-	}
 	}
 
 	#Focus for Affirmitive Action
@@ -944,74 +266,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_C_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_C_1b
-				add_idea = LES_young_guardiansofyouth_CA
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_young_guardiansofyouth_A_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_young_guardiansofyouth_A_1b
-				add_idea = LES_young_guardiansofyouth_A_2
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_1b
-				add_idea = LES_femoidsliberated_2
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidsliberated_C_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidsliberated_C_1b
-				add_idea = LES_femoidsliberated_C_2
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_C_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_C_1b
-				add_idea = LES_femoidssubmit_CA
-				}
-		}
-			if = {
-					limit = {
-						AND = {
-						has_idea = LES_femoidssubmit_A_1b
-						}
-					}
-			swap_ideas = {
-				remove_idea = LES_femoidssubmit_A_1b
-				add_idea = LES_femoidssubmit_AB_2
-				}
-		}
-	}
 	}
 
 	#Focus for Affirmitive Action_2
@@ -1026,162 +280,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_2a
-		add_idea = LES_femoidsliberated_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_2
-		add_idea = LES_femoidsliberated_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_A_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_A_2a
-		add_idea = LES_young_guardiansofyouth_A_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_A_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_A_2
-		add_idea = LES_young_guardiansofyouth_A_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_CA1
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_CA1
-		add_idea = LES_young_guardiansofyouth_CA2
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_CA
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_CA
-		add_idea = LES_young_guardiansofyouth_CA1
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_C_2Aa
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_C_2Aa
-		add_idea = LES_femoidsliberated_C_2Ab
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_C_2A
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_C_2A
-		add_idea = LES_femoidsliberated_C_2Aa
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_C_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_C_2a
-		add_idea = LES_femoidssubmit_C_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_C_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_C_2
-		add_idea = LES_femoidssubmit_C_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_AB_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_AB_2a
-		add_idea = LES_femoidssubmit_AB_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_AB_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_AB_2
-		add_idea = LES_femoidssubmit_AB_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_CA_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_CA_2a
-		add_idea = LES_femoidssubmit_CA_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_CA
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_CA
-		add_idea = LES_femoidssubmit_CA_2a
-		}
-		}
-	}
 	}
 
 	#Focus for Affirmitive Action_3
@@ -1196,162 +294,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_2a
-		add_idea = LES_femoidsliberated_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_2
-		add_idea = LES_femoidsliberated_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_A_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_A_2
-		add_idea = LES_young_guardiansofyouth_A_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_A_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_A_2a
-		add_idea = LES_young_guardiansofyouth_A_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_CA1
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_CA1
-		add_idea = LES_young_guardiansofyouth_CA2
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_young_guardiansofyouth_CA
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_young_guardiansofyouth_CA
-		add_idea = LES_young_guardiansofyouth_CA1
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_C_2Aa
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_C_2Aa
-		add_idea = LES_femoidsliberated_C_2Ab
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidsliberated_C_2A
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidsliberated_C_2A
-		add_idea = LES_femoidsliberated_C_2Aa
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_C_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_C_2a
-		add_idea = LES_femoidssubmit_C_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_C_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_C_2
-		add_idea = LES_femoidssubmit_C_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_AB_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_AB_2a
-		add_idea = LES_femoidssubmit_AB_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_AB_2
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_AB_2
-		add_idea = LES_femoidssubmit_AB_2a
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_CA_2a
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_CA_2a
-		add_idea = LES_femoidssubmit_CA_2b
-		}
-		}
-		if = {
-				limit = {
-					AND = {
-					has_idea = LES_femoidssubmit_CA
-					}
-				}
-		swap_ideas = {
-		remove_idea = LES_femoidssubmit_CA
-		add_idea = LES_femoidssubmit_CA_2a
-		}
-		}
-	}
 	}
 
 	#Focus for Follow the Example of Middle ages
@@ -5045,11 +3987,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		add_ideas = {
-		
-		}
-	}
 	}
 
 	#Focus for Economical centres_2
