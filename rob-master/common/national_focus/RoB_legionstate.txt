@@ -55,12 +55,6 @@ focus_tree = {
 		x = 57
 		y = 9
 		cost = 5
-		available = {
- 			OR = {
- 			has_country_flag = pagan
- 			has_country_flag = christ
-			}
-		}
 		mutually_exclusive = { focus = LES_liberationofwomen focus = LES_guardiansofyouth }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_dealingwithmothers }
@@ -101,12 +95,6 @@ focus_tree = {
 		x = 51
 		y = 9
 		cost = 5
-		available = {
- 			OR = {
- 			has_country_flag = poets
- 			has_country_flag = christ
-			}
-		}
 		mutually_exclusive = { focus = LES_patriarchaltraditions focus = LES_guardiansofyouth }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_dealingwithmothers }
@@ -1361,12 +1349,6 @@ focus_tree = {
 		x = 25
 		y = 9
 		cost = 5
-		available = {
- 			OR = {
- 			has_country_flag = pagan
- 			has_country_flag = christ
-			}
-		}
 		mutually_exclusive = { focus = LES_socialismwithslaviccharacteristics focus = LES_divinecorporations }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_attitudetowork }
@@ -1882,12 +1864,6 @@ focus_tree = {
 		x = 44
 		y = 9
 		cost = 5
-		available = {
- 			OR = {
- 			has_country_flag = poets
- 			has_country_flag = christ
-			}
-		}
 		mutually_exclusive = { focus = LES_racialeugenics focus = LES_spiritoverbody }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
@@ -1908,13 +1884,6 @@ focus_tree = {
 		x = 47
 		y = 9
 		cost = 5
-		available = {
- 			OR = {
- 			has_country_flag = pagan
- 			has_country_flag = poets
-			}
-		}
-
 		mutually_exclusive = { focus = LES_spiritoverbody focus = LES_reshapingofaconstruct }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
@@ -1944,6 +1913,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = les_tt_6
+		}
 	}
 
 	#Focus for Banish aliens_2
@@ -1958,6 +1930,64 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_1Aa
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_1Aa
+			add_idea = LES_eugenics_RE_1Ab
+			}
+		}
+		if = {
+				limit = {
+						AND = {
+						has_idea = LES_eugenics
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics
+			add_idea = LES_eugenics_RE_1Aa
+			}
+		}
+		if = {
+				limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_1Ba
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_1Ba
+			add_idea = LES_eugenics_RE_1Bb
+			}
+		}
+		if = {
+				limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_Ba
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_Ba
+			add_idea = LES_reconstructxD_BA_Bb
+			}
+		}
+		if = {
+				limit = {
+						AND = {
+						has_idea = LES_reconstructxD
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD
+			add_idea = LES_reconstructxD_BA_Aa
+			}
+		}
+		add_popularity = {ideology = pelekist popularity =0.05}
+		}
 	}
 
 	#Focus for Banish aliens_3
@@ -1971,6 +2001,52 @@ focus_tree = {
 		prerequisite = { focus = LES_banishaliens}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics
+			add_idea = LES_eugenics_RE_1Ba
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_1Aa
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_1Aa
+			add_idea = LES_eugenics_RE_1Ab
+			}
+		}
+		if = {
+				limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_Aa
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_Aa
+			add_idea = LES_reconstructxD_BA_Ab
+			}
+		}
+		if = {
+				limit = {
+						AND = {
+						has_idea = LES_reconstructxD
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD
+			add_idea = LES_reconstructxD_BA_Ba
+			}
+		}
 		}
 	}
 
@@ -1990,7 +2066,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst
+			add_idea = LES_spiritfirst_IU_1
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD
+			add_idea = LES_reconstructxD_IU_1
+			}
+		}
 	}
+}
 
 	#Focus for Integrate the Unwilling_2
 	focus = {
@@ -2003,6 +2103,9 @@ focus_tree = {
 		prerequisite = { focus = LES_integreatehteunwilling }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = les_tt_5
 		}
 	}
 
@@ -2018,6 +2121,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_1
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_1
+			add_idea = LES_spiritfirst_IU_1b
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_1
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_1
+			add_idea = LES_reconstructxD_IU_1Ba
+			}
+		}
+	}
 	}	
 
 	#Focus for Genetic Engineering
@@ -2034,6 +2161,76 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_1Bb
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_1Bb
+			add_idea = LES_eugenics_RE_KA_2
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_1Ab
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_1Ab
+			add_idea = LES_eugenics_RE_KA_2
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_1b
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_1b
+			add_idea = LES_spiritfirst_IU_KA
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_Bb
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_Bb
+			add_idea = LES_reconstructxD_BA_KA
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_Ab
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_Ab
+			add_idea = LES_reconstructxD_BA_KA
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_1Ba
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_1Ba
+			add_idea = LES_reconstructxD_IU_KA
+			}
+		}
+
+
+		}
 	}
 
 	#Focus for Genetic Engineering_2
@@ -2047,6 +2244,9 @@ focus_tree = {
 		prerequisite = { focus = LES_geneticengineering}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = les_tt_4
 		}
 	}
 
@@ -2062,7 +2262,53 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_KA_2
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_KA_2
+			add_idea = LES_eugenics_RE_KA_2A
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_KA
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_KA
+			add_idea = LES_spiritfirst_IU_KA2
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_KA
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_KA
+			add_idea = LES_reconstructxD_BA_KA2
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_KA
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_KA
+			add_idea = LES_reconstructxD_IU_KA2
+			}
+		}
+		}
+}
 
 	#Focus for XXXX
 	focus = {
@@ -2078,6 +2324,74 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_1b
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_1b
+			add_idea = LES_spiritfirst_IU_GC_2
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_1Bb
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_1Bb
+			add_idea = LES_eugenics_RE_GC
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_1Ab
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_1Ab
+			add_idea = LES_eugenics_RE_GC
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_1Ba
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_1Ba
+			add_idea = LES_reconstructxD_IU_GC
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_Bb
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_Bb
+			add_idea = LES_reconstructxD_BA_GC
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_Ab
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_Ab
+			add_idea = LES_reconstructxD_BA_GC
+			}
+		}
+		}
 	}
 
 	#Focus for XXXX_2
@@ -2092,6 +2406,96 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_GC_2a
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_GC_2a
+			add_idea = LES_spiritfirst_IU_GC_2b
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_GC_2
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_GC_2
+			add_idea = LES_spiritfirst_IU_GC_2a
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_GC
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_GC
+			add_idea = LES_eugenics_RE_GC_Aa
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_GC_Ba
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_GC_Ba
+			add_idea = LES_eugenics_RE_GC_Bb
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_GC_Ba
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_GC_Ba
+			add_idea = LES_reconstructxD_IU_GC_Bb
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_GC
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_GC
+			add_idea = LES_reconstructxD_IU_GC_Aa
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_GC_Ba
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_GC_Ba
+			add_idea = LES_reconstructxD_BA_GC_Bb
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_GC
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_GC
+			add_idea = LES_reconstructxD_BA_GC_Aa
+			}
+		}
+		}
 	}
 
 	#Focus for XXXX_3
@@ -2105,6 +2509,96 @@ focus_tree = {
 		prerequisite = { focus = LES_XXXX }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_GC_2a
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_GC_2a
+			add_idea = LES_spiritfirst_IU_GC_2b
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_spiritfirst_IU_GC_2
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_spiritfirst_IU_GC_2
+			add_idea = LES_spiritfirst_IU_GC_2a
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_GC
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_GC
+			add_idea = LES_eugenics_RE_GC_Ba
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_eugenics_RE_GC_Aa
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_eugenics_RE_GC_Aa
+			add_idea = LES_eugenics_RE_GC_Ab
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_GC_Aa
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_GC_Aa
+			add_idea = LES_reconstructxD_IU_GC_Ab
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_IU_GC
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_IU_GC
+			add_idea = LES_reconstructxD_IU_GC_Ba
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_GC_Aa
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_GC_Aa
+			add_idea = LES_reconstructxD_BA_GC_Ab
+			}
+		}
+			if = {
+					limit = {
+						AND = {
+						has_idea = LES_reconstructxD_BA_GC
+						}
+					}
+			swap_ideas = {
+			remove_idea = LES_reconstructxD_BA_GC
+			add_idea = LES_reconstructxD_BA_GC_Ba
+			}
+		}
 		}
 	}
 
@@ -4133,12 +4627,6 @@ focus_tree = {
 		x = 41
 		y = 9
 		cost = 5
-		available = {
- 			OR = {
- 			has_country_flag = pagan
- 			has_country_flag = christ
-			}
-		}
 		mutually_exclusive = { focus = LES_racialeugenics focus = LES_reshapingofaconstruct }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
@@ -4146,11 +4634,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_war_support = 0.05
-		add_stability = 0.05
 		add_ideas  = {
 		LES_spiritfirst
 		}
+		add_war_support = 0.05
+		add_stability = 0.05
 		}
 	}
 
@@ -4776,6 +5264,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = les_tt_8
 		create_faction = "Pan-Slavic Confederation"
 		}
 	}
@@ -4793,6 +5282,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = les_tt_7
+		}
 	}
 
 	#Focus for East and West
@@ -4807,6 +5299,9 @@ focus_tree = {
 		prerequisite = { focus = LES_formofourpanslavicstate }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = les_tt_9
 		}
 	}
 
